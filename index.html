@@ -55,12 +55,20 @@ h2{font-size:34px;margin:0 0 26px;letter-spacing:-.02em}
   .hero{padding-top:64px}
   h1{font-size:52px}
 }
+
+/* Site language navigation */
+.lang-switch{display:flex;align-items:center;gap:5px;margin-left:auto;flex-shrink:0}
+.lang-switch a{display:inline-flex;align-items:center;justify-content:center;min-width:43px;padding:7px 9px;border-radius:9px;border:1px solid #34404a;color:#d7dde1;font-size:12px;font-weight:750;letter-spacing:.02em}
+.lang-switch a:hover,.lang-switch a:focus-visible{border-color:var(--accent);color:#fff;outline-offset:3px}
+.lang-switch a[aria-current="page"]{background:var(--accent);border-color:var(--accent);color:#0b0d0f}
+@media(max-width:760px){.lang-switch{margin-left:auto;gap:4px}.lang-switch a{min-width:38px;padding:7px}.nav{height:66px}}
 </style>
+<link rel="alternate" hreflang="en" href="https://samuelidalino.github.io/"/><link rel="alternate" hreflang="pt-BR" href="https://samuelidalino.github.io/pt.html"/><link rel="alternate" hreflang="es" href="https://samuelidalino.github.io/es.html"/>
 </head>
 <body>
 <nav>
   <div class="wrap nav">
-    <div class="brand">Samuel Idalino</div>
+    <div class="brand">Samuel Idalino</div><div class="lang-switch" role="navigation" aria-label="Select language / Selecionar idioma / Seleccionar idioma"><a lang="pt-BR" href="pt.html"  title="Português">PT</a><a lang="en" href="index.html" aria-current="page" title="English">EN</a><a lang="es" href="es.html"  title="Español">ES</a></div>
     <div class="links">
       <a href="#about">About</a><a href="#experience">Experience</a><a href="#work">Selected Work</a>
       <a href="#skills">Skills</a><a href="#zendesk">Zendesk Fit</a><a href="#contact">Contact</a>
